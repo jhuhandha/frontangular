@@ -6,17 +6,22 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
