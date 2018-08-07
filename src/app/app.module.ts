@@ -9,12 +9,14 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
+import { ProductoComponent } from './producto/producto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuarioComponent,
-    LoginComponent
+    LoginComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,
